@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nmhnj16RVV+yfeL2tP4iH0r9bihMf74xPcIGWKfJFNTx0nozQF0l49Y/MnG/3T574vZSXKAi8UjlWlPTgW5dkA==",
+  "success": true,
+  "projectFilePath": "C:\\Test_Engineering\\GIT\\se-csharp-iconnect\\se-csharp-iconnect.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lister\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.6.0\\microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\microsoft.testplatform.testhost\\17.6.0\\microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\selenium.support\\4.18.1\\selenium.support.4.18.1.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\selenium.webdriver\\4.18.1\\selenium.webdriver.4.18.1.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Lister\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
