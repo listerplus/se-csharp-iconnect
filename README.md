@@ -34,6 +34,8 @@ Install the following needed applications
 
 ## References
 - [Selenium .NET API Docs](https://www.selenium.dev/selenium/docs/api/dotnet/)
+- [Selenium GitHub dotnet examples](https://github.com/SeleniumHQ/seleniumhq.github.io/tree/trunk/examples/dotnet)
+- [NUnit Documentation](https://docs.nunit.org/)
 
 ## Notes
 >#### gitignore
