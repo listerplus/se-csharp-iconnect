@@ -18,6 +18,7 @@ Install the following needed applications
   | Selenium.WebDriver.ChromeDriver | webdriver for chrome
   | System.Configuration.ConfigurationManager | access config files
   | DotNetSeleniumExtras.WaitHelpers | implementation of ExpectedConditions
+  | ExtentReports | 
   | Microsoft.NETCore.App | optional, deprecated
 
 ## Getting Started
@@ -36,6 +37,7 @@ Install the following needed applications
 - [Selenium .NET API Docs](https://www.selenium.dev/selenium/docs/api/dotnet/)
 - [Selenium GitHub dotnet examples](https://github.com/SeleniumHQ/seleniumhq.github.io/tree/trunk/examples/dotnet)
 - [NUnit Documentation](https://docs.nunit.org/)
+- [Extent - Report API](https://www.extentreports.com/docs/versions/3/net/index.html)
 
 ## Notes
 >#### gitignore
