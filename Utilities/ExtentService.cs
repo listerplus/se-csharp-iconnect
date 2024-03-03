@@ -29,7 +29,7 @@ namespace se_csharp_iconnect.Utilities
                 // reporter.LoadConfig(extentConfigPath)
                 extent.AttachReporter(reporter);
             }
-            // Second test has extent not equal to null and will use the same extent object and appends the result
+            // Succeeding test has extent != null and will use the same extent object and appends the result
             return extent;
         }
 
