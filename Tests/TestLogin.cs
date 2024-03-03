@@ -3,20 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
 using se_csharp_iconnect.Pages;
+using se_csharp_iconnect.Utilities;
 
 namespace se_csharp_iconnect.Tests
 {
+    [Category("Smoke")]
+    [Category("Regression")]
+    [Author("Lister Sandalo")]
     public class TestLogin : BaseTest
     {
         [Test]
-        public void Test01LoginInvalidUser()
+        public void Test01LoginInvalidCredentials()
         {
             LoginPage loginPage = new LoginPage(driver);
+            loginPage.LoginCredentials(loginPage.userInValid, loginPage.passwordInValid);
+            WaitUtil.WaitVisible(driver, loginPage.ErrorFieldBy);
+            Assert.That(driver.FindElement(loginPage.ErrorFieldBy).Text, Is.EqualTo(loginPage.errorInValid));
+        }
 
-
-
-
+        [Test]
+        public void Test02LoginValidCredentials()
+        {
+            LoginPage loginPage = new LoginPage(driver);
+            loginPage.LoginCredentials(loginPage.userValid, loginPage.passwordValid);
+            HomePage homePage = new HomePage(driver);
+            string helloMessage = $"Hello {loginPage.userValid}!";
+            Assert.That(homePage.helloRegion.Text, Is.EqualTo(helloMessage));
 
         }
     }
