@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using se_csharp_iconnect.Pages;
-using OpenQA.Selenium;
+﻿using se_csharp_iconnect.Pages;
+using se_csharp_iconnect.Utilities;
 
 namespace se_csharp_iconnect.Tests
 {
@@ -30,7 +25,7 @@ namespace se_csharp_iconnect.Tests
             TMPage.DeleteFirstItem();
             int newcount = TMPage.GetItemsCount();
             Assert.That(newcount, Is.EqualTo(count - 1));
-            //ReportLog.Pass();
+            ReportLog.Pass($"New count: {newcount}, which is previous count of {count} - 1");
         }
     }
 }

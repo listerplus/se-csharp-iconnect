@@ -20,6 +20,7 @@ namespace se_csharp_iconnect.Tests
             LoginPage loginPage = new LoginPage(driver);
             loginPage.LoginCredentials(loginPage.userInValid, loginPage.passwordInValid);
             WaitUtil.WaitVisible(driver, loginPage.ErrorFieldBy);
+            ReportLog.Info($"Used cred : user: {loginPage.userInValid}, pwd: {loginPage.passwordInValid}");
             Assert.That(driver.FindElement(loginPage.ErrorFieldBy).Text, Is.EqualTo(loginPage.errorInValid));
         }
 
@@ -30,6 +31,7 @@ namespace se_csharp_iconnect.Tests
             loginPage.LoginCredentials(loginPage.userValid, loginPage.passwordValid);
             HomePage homePage = new HomePage(driver);
             string helloMessage = $"Hello {loginPage.userValid}!";
+            ReportLog.Info($"Used cred : user: {loginPage.userValid}, pwd: {loginPage.passwordValid}");
             Assert.That(homePage.helloRegion.Text, Is.EqualTo(helloMessage));
 
         }
