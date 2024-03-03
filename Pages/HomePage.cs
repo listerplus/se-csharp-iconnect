@@ -19,7 +19,7 @@ namespace se_csharp_iconnect.Pages
         IWebElement customersOption => _driver.FindElement(By.XPath("///a[@href='/Client']"));
         IWebElement employeesOption => _driver.FindElement(By.XPath("//a[@href='/User']"));
         IWebElement TMOption => _driver.FindElement(By.XPath("//a[@href='/TimeMaterial']"));
-        IWebElement helloRegion => _driver.FindElement(By.XPath("//*[@id=\"logoutForm\"]//a[@class=\"dropdown-toggle\"][@role=\"button\"]"));
+        public IWebElement helloRegion => _driver.FindElement(By.XPath("//*[@id=\"logoutForm\"]//a[@class=\"dropdown-toggle\"][@role=\"button\"]"));
 
 
 
