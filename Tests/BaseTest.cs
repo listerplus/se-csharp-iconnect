@@ -1,10 +1,8 @@
-﻿using OpenQA.Selenium;
-using se_csharp_iconnect.Utilities;
-using NUnit.Framework.Interfaces;
+﻿using AventStack.ExtentReports;
 using AventStack.ExtentReports.Model;
-using System;
-using AventStack.ExtentReports;
-using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using se_csharp_iconnect.Utilities;
 
 namespace se_csharp_iconnect.Tests
 {
