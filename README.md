@@ -16,9 +16,11 @@ Install the following needed applications
   | Selenium.Support | 
   | DotNetSeleniumExtras.PageObjects.Core | to use page factory
   | Selenium.WebDriver.ChromeDriver | webdriver for chrome
-  | System.Configuration.ConfigurationManager | access config files
   | DotNetSeleniumExtras.WaitHelpers | implementation of ExpectedConditions
-  | ExtentReports | 
+  | ExtentReports |
+  | Microsoft.Extensions.Configuration | read configuration data
+  | Microsoft.Extensions.Configuration.Json | get configuration data from a JSON file
+  | Microsoft.Extensions.Configuration.Binder | bind given object instance to configuration values
   | Microsoft.NETCore.App | optional, deprecated
 
 ## Getting Started

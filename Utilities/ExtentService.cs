@@ -3,11 +3,14 @@ using AventStack.ExtentReports.Reporter;
 
 namespace se_csharp_iconnect.Utilities
 {
-    // Create instance of ExtentReports if not present else return instance
+    /// <summary>
+    /// Class acts as a centralized service for managing the creation and configuration of the ExtentReports instance
+    /// </summary>
     public class ExtentService
     {
         public static ExtentReports extent;
 
+        // Create instance of ExtentReports if not present else return instance
         public static ExtentReports GetExtent()
         {
             if (extent == null)
