@@ -26,7 +26,7 @@ namespace se_csharp_iconnect.Tests
             HomePage homePage = new HomePage(driver);
             string helloMessage = $"Hello {loginPage.userValid}!";
             ReportLog.Info($"Used cred : user: {loginPage.userValid}, pwd: {loginPage.passwordValid}");
-            Assert.That(homePage.helloRegion.Text, Is.EqualTo(helloMessage));
+            Assert.That(homePage.GetLoggedInMessage(), Is.EqualTo(helloMessage));
 
         }
     }

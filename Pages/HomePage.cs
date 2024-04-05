@@ -11,33 +11,34 @@ namespace se_csharp_iconnect.Pages
             this._driver = driver;
         }
 
-        IWebElement btnDashboard => _driver.FindElement(By.XPath("//li[@class='menuitem']/a[contains(text(),'Dashboard')]"));
-        IWebElement btnJobs => _driver.FindElement(By.Id("//a[@href='/Job']"));
-        IWebElement btnJobsCalendar => _driver.FindElement(By.Id("//a[@href='/Scheduler']"));
-        IWebElement btnStaffCalendar => _driver.FindElement(By.Id("//a[@href='/StaffCalendar']"));
-        IWebElement dropdownAdministration => _driver.FindElement(By.XPath("//*[contains(text(),'Administration')]"));
-        IWebElement customersOption => _driver.FindElement(By.XPath("///a[@href='/Client']"));
-        IWebElement employeesOption => _driver.FindElement(By.XPath("//a[@href='/User']"));
-        IWebElement TMOption => _driver.FindElement(By.XPath("//a[@href='/TimeMaterial']"));
-        public IWebElement helloRegion => _driver.FindElement(By.XPath("//*[@id=\"logoutForm\"]//a[@class=\"dropdown-toggle\"][@role=\"button\"]"));
+        // By locators
+        By btnDashboardBy = By.XPath("//li[@class='menuitem']/a[contains(text(),'Dashboard')]");
+        By btnJobsBy = By.Id("//a[@href='/Job']");
+        By btnJobsCalendarBy = By.Id("//a[@href='/Scheduler']");
+        By btnStaffCalendarBy = By.Id("//a[@href='/StaffCalendar']");
+        By dropdownAdministrationBy = By.XPath("//*[contains(text(),'Administration')]");
+        By customersOptionBy = By.XPath("///a[@href='/Client']");
+        By employeesOptionBy = By.XPath("//a[@href='/User']");
+        By TMOptionBy = By.XPath("//a[@href='/TimeMaterial']");
+        public By helloRegionBy = By.XPath("//*[@id=\"logoutForm\"]//a[@class=\"dropdown-toggle\"][@role=\"button\"]");
 
 
 
         public void NavigateToTMPage()
         {
-            dropdownAdministration.Click();
-            TMOption.Click();
+            _driver.FindElement(dropdownAdministrationBy).Click();
+            _driver.FindElement(TMOptionBy).Click();
         }
 
         public void NavigateToEmployeePage()
         {
-            dropdownAdministration.Click();
-            employeesOption.Click();
+            _driver.FindElement(dropdownAdministrationBy).Click();
+            _driver.FindElement(employeesOptionBy).Click();
         }
 
-        public string GetLoggedInUser()
+        public string GetLoggedInMessage()
         {
-            return helloRegion.Text;
+            return _driver.FindElement(helloRegionBy).Text;
             //should return "Hello user!"
         }
 
