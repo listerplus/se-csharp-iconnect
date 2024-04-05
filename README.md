@@ -14,11 +14,11 @@ Install the following needed applications
   |-------|-------|
   | Selenium.Webdriver | choose latest version
   | Selenium.Support | 
-  | DotNetSeleniumExtras.PageObjects.Core | to use page factory
   | Selenium.WebDriver.ChromeDriver | webdriver for chrome
   | System.Configuration.ConfigurationManager | access config files
   | DotNetSeleniumExtras.WaitHelpers | implementation of ExpectedConditions
   | ExtentReports | 
+  | DotNetSeleniumExtras.PageObjects.Core | optional, to use page factory
   | Microsoft.NETCore.App | optional, deprecated
 
 ## Getting Started
@@ -38,6 +38,8 @@ Install the following needed applications
 - [Selenium GitHub dotnet examples](https://github.com/SeleniumHQ/seleniumhq.github.io/tree/trunk/examples/dotnet)
 - [NUnit Documentation](https://docs.nunit.org/)
 - [Extent - Report API](https://www.extentreports.com/docs/versions/3/net/index.html)
+- [C# Coding Standards and Best Practices](https://www.dofactory.com/csharp-coding-standards)
+- [C# identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
 
 ## Notes
 >#### gitignore
