@@ -16,14 +16,16 @@ namespace se_csharp_iconnect.Tests
         [OneTimeSetUp]
         public void BaseFixtureSetup()
         {
-            AppConfig config = AppConfig.LoadConfiguration();
-            driver = DriverSetup.BrowserSetup(driver, config.Browser);
-            driver.Navigate().GoToUrl(config.Url);
+            ExtentTestManager.CreateMainTest(GetType().Name);
+            driver = DriverSetup.BrowserSetup(driver);
+            string? url = "http://" + DriverSetup.Uri + "/";
+            driver.Navigate().GoToUrl(url);
         }
 
         public IWebDriver GetDriver()
         {
             return driver;
+
         }
 
         [OneTimeTearDown]

@@ -35,13 +35,14 @@ namespace se_csharp_iconnect.Pages
         // Methods
         public void ClickLogin() 
         {
-            WaitUtil.WaitVisible(driver, BtnLoginBy).Click();
+            WaitUtil.WaitVisible(driver, BtnLoginBy);
             driver.FindElement(BtnLoginBy).Click();
         }
 
         public void LoginCredentials(string username, string password) 
         {
-            WaitUtil.WaitVisible(driver, TxtUserNameBy).Clear();
+            WaitUtil.WaitVisible(driver, TxtUserNameBy);
+            driver.FindElement(TxtUserNameBy).Clear();
             driver.FindElement(TxtUserNameBy).SendKeys(username);
             driver.FindElement(TxtPasswordBy).Clear();
             driver.FindElement(TxtPasswordBy).SendKeys(password);
@@ -50,7 +51,8 @@ namespace se_csharp_iconnect.Pages
 
         public void Login()
         {
-            WaitUtil.WaitVisible(driver, TxtUserNameBy).Clear();
+            WaitUtil.WaitVisible(driver, TxtUserNameBy);
+            driver.FindElement(TxtUserNameBy).Clear();
             driver.FindElement(TxtUserNameBy).SendKeys(userValid);
             driver.FindElement(TxtPasswordBy).Clear();
             driver.FindElement(TxtPasswordBy).SendKeys(passwordValid);
