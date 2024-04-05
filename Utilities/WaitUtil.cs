@@ -7,16 +7,21 @@ namespace se_csharp_iconnect.Utilities
     public class WaitUtil
     {
         private const int DefaultTimeout = 10;
-        public static void WaitVisible(IWebDriver driver, By by, int timeoutInSeconds = DefaultTimeout)
+
+        public static IWebElement WaitVisible(IWebDriver driver, By by, int timeoutInSeconds = DefaultTimeout)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
-            wait.Until(ExpectedConditions.ElementIsVisible(by));
+            // The element variable is inferred to have the type IWebElement
+            // The WebDriverWait class returns an IWebElement once the expected condition (in this case, visibility of the element) is met
+            var element = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds)).Until(ExpectedConditions.ElementIsVisible(by));
+            return element;
         }
 
-        public static void WaitClickable(IWebDriver driver, By by, int timeoutInSeconds = DefaultTimeout)
+        public static IWebElement WaitClickable(IWebDriver driver, By by, int timeoutInSeconds = DefaultTimeout)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
-            wait.Until(ExpectedConditions.ElementToBeClickable(by));
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
+            //wait.Until(ExpectedConditions.ElementToBeClickable(by));
+            var element = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds)).Until(ExpectedConditions.ElementToBeClickable(by));
+            return element;
         }
 
         public static void WaitSelected(IWebDriver driver, By by, int timeoutInSeconds = DefaultTimeout)
