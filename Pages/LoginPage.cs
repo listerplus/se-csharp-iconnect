@@ -20,10 +20,10 @@ namespace se_csharp_iconnect.Pages
         */
 
         // By Locators
-        public By TxtUserNameBy => By.Id("UserName");
-        public By TxtPasswordBy => By.Id("Password");
-        public By BtnLoginBy => By.XPath("//input[@value='Log in']");
-        public By ErrorFieldBy => By.XPath("//div[@class='validation-summary-errors']/ul/li");
+        public By TxtUserNameBy = By.Id("UserName");
+        public By TxtPasswordBy = By.Id("Password");
+        public By BtnLoginBy = By.XPath("//input[@value='Log in']");
+        public By ErrorFieldBy = By.XPath("//div[@class='validation-summary-errors']/ul/li");
 
         // Text
         public readonly string userValid = "hari";
